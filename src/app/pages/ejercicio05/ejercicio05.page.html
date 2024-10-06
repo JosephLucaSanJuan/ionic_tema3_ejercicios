@@ -1,0 +1,14 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Ejercicio 5</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-label>Valor mínimo</ion-label>
+  <ion-input type="number" [(ngModel)]="min"></ion-input>
+  <ion-label>Valor máximo</ion-label>
+  <ion-input type="number" [(ngModel)]="max"></ion-input>
+  <ion-button expand="full" (click)="randomNumber()">Genera un número aleatorio entre el {{ min }} y el {{ max }}</ion-button>
+  <h1>{{ n }}</h1>
+</ion-content>

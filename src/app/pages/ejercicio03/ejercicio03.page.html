@@ -1,0 +1,13 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Ejercicio 3</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ionic-padding">
+  <ion-button (click)="decreaseNum(1)">-</ion-button>
+  <ion-button (click)="increaseNum(1)">+</ion-button>
+  <h1>{{ number }}</h1>
+  <br>
+  <ion-button (click)="resetNum()" expand="full">Reset</ion-button>
+</ion-content>

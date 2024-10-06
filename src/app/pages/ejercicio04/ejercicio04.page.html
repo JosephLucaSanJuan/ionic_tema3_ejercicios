@@ -1,0 +1,12 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Ejercicio 4</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-label class="ion-padding">Nombre</ion-label>
+  <ion-input class="ion-padding" [(ngModel)]="nombre"></ion-input>
+  <ion-button (click)="sayHello()" expand="full">Saluda</ion-button>
+  <h2>{{ text | uppercase }}</h2>
+</ion-content>

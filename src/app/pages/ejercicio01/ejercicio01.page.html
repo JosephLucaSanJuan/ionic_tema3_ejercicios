@@ -1,0 +1,16 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Ejercicio 1</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <!--ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">ejercicio01</ion-title>
+    </ion-toolbar>
+  </ion-header-->
+  <ion-button (click)="showName()" expand="full">Muestra Nombre</ion-button>
+  <ion-button (click)="clearName()" expand="full">Limpia Pantalla</ion-button>
+  <h2 class="ion-text-center">{{ text | uppercase }}</h2>
+</ion-content>
